@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Two Idiots, One Story</title>
-<link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Idiots, One Story ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-<div class="card">
-<h1>Two Idiots, One Story</h1>
-<p>Since 2011 ❤️</p>
-<p>This is the starter project.</p>
-<button onclick="alert('Next parts will be added as we build the project.')">Take My Hand ❤️</button>
-<img src="Pic.jpg" alt="Our photo"> style="max-width:280px;margin-top:20px">
-<p>Later the website will reveal <code>letter.jpg</code>.</p>
+
+<div class="container">
+
+    <!-- Page 1 -->
+    <section class="page active" id="page1">
+
+        <h1>Two Idiots,<br>One Story ❤️</h1>
+
+        <p class="subtitle">
+            Since 2011...
+        </p>
+
+        <button onclick="nextPage()">
+            Take My Hand →
+        </button>
+
+    </section>
+
+    <!-- Page 2 -->
+    <section class="page" id="page2">
+
+        <img src="Pic.jpg" class="photo">
+
+        <h2>Just Us ❤️</h2>
+
+        <p>
+            Some people spend a lifetime
+            searching for someone who feels like home.
+
+            <br><br>
+
+            I got lucky.
+
+            <br><br>
+
+            No matter how much life changes,
+            my favourite memories somehow
+            always have you in them.
+        </p>
+
+        <button onclick="nextPage()">
+            Continue →
+        </button>
+
+    </section>
+
+    <!-- Page 3 -->
+    <section class="page" id="page3">
+
+        <h2>Two Idiots, One Story</h2>
+
+        <div class="timeline">
+
+            <div class="item">
+                <h3>2011</h3>
+                <p>Where everything began.</p>
+            </div>
+
+            <div class="item">
+                <h3>School Days</h3>
+                <p>Laughing over nothing and making memories out of ordinary days.</p>
+            </div>
+
+            <div class="item">
+                <h3>Today</h3>
+                <p>Still my favourite person.</p>
+            </div>
+
+        </div>
+
+        <button onclick="nextPage()">
+            One Last Thing →
+        </button>
+
+    </section>
+
+    <!-- Page 4 -->
+    <section class="page" id="page4">
+
+        <img src="Letter.jpg" class="letter">
+
+        <h2>Happy Boyfriend's Day ❤️</h2>
+
+        <p>
+            Thank you for every laugh,
+            every memory,
+            every little moment.
+
+            <br><br>
+
+            I love you.
+        </p>
+
+    </section>
+
 </div>
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
+</html>
