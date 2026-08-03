@@ -1,1 +1,125 @@
-body{margin:0;background:#fff8f3;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh}.card{background:white;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);text-align:center}button{padding:12px 22px;border:none;border-radius:30px;background:#f7b6c8;cursor:pointer}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fdeff2,#fff7f8);
+    overflow:hidden;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+
+.page{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+    opacity:0;
+    transform:translateX(100%);
+    transition:.7s ease;
+}
+
+.page.active{
+    opacity:1;
+    transform:translateX(0);
+}
+
+h1{
+    color:#b76e79;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#b76e79;
+    font-size:2.2rem;
+    margin:20px 0;
+}
+
+.subtitle{
+    font-size:1.3rem;
+    color:#666;
+    margin-bottom:40px;
+}
+
+p{
+    max-width:600px;
+    color:#555;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    background:#b76e79;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.photo,
+.letter{
+    width:90%;
+    max-width:350px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.timeline{
+    margin-top:20px;
+    width:100%;
+    max-width:500px;
+}
+
+.item{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.item h3{
+    color:#b76e79;
+    margin-bottom:8px;
+}
+
+@media(max-width:600px){
+
+h1{
+    font-size:2.2rem;
+}
+
+h2{
+    font-size:1.8rem;
+}
+
+p{
+    font-size:1rem;
+}
+
+button{
+    width:80%;
+}
+
+}
